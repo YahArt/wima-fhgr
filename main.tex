@@ -1,0 +1,97 @@
+\documentclass[12pt, oneside]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage[usegeometry]{typearea}
+% Useful for checking layout
+% \usepackage{showframe}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+% Indenting the first sentence after section
+\usepackage{indentfirst}
+% Set language
+\usepackage[german]{babel}
+% Images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+
+\geometry{
+ a4paper,
+ left=30mm,
+ top=25mm,
+ right=25mm,
+ bottom=20mm,
+ footskip=15pt,
+}
+
+\setstretch{1.3} % Define Line Spacing
+\renewcommand{\headrulewidth}{0pt} % Remove footer line
+
+\pagestyle{fancy} % Allow for customizing header and footer
+% Customize footer for page number location
+\fancyhf{}
+\fancyfoot{}
+\fancyhead[R]{Yannick Hutter}
+\fancyhead[L]{Wissensmanagementmodell}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+		\Huge
+		\textbf{Wissensmanagementmodell SOLVE}
+		
+		\vspace{0.5cm}
+		\LARGE
+		Erstellung eines Wissensmanagementmodells zur Förderung von internem IT-Wissen in der Unternehmung SOLVE
+		
+		\vspace{1.5cm}
+		\normalsize
+		\textbf{Yannick Hutter}\\
+		\textbf{Digital Business Management Klasse 18tz}\\
+		\textbf{Talackerstrasse 8}\\
+		\textbf{8887 Mels}\\
+		\textbf{yannick.hutter@stud.fhgr.ch}\\
+		
+		\vfill
+		
+		\begin{figure}[ht]
+        	\includegraphics[width=12cm]{images/WIM_Titelblatt.png}
+        	\centering
+        \end{figure}
+
+		
+		\vfill
+		
+		\vspace{0.8cm}
+		
+		
+		Digital Business Management\\
+		Fachhochschule Graubünden\\
+		Mels, April 2022
+	\end{center}
+\end{titlepage}
+
+\clearpage
+\section{Wissensmanagement Modell}
+\vfill
+\begin{figure}[ht]
+	\includegraphics[width=14cm]{images/WIM_Modell.png}
+	\centering
+\end{figure}
+\vfill
+
+\clearpage
+\section{Themenwahl und Themenabgrenzung}
+Die Firma Solve ist ein Engineering Unternehmen welches IT und Elektronik Dienstleistungen anbietet. Das Modell in Schritt 4 ist vom Logo der Firma Solve inspiriert und soll dem Modell einen Corporate Identity Charakter verleihen. In der Firma Solve hat jeder Mitarbeiter die Möglichkeit, Wissen zu einem bestimmten technologischen Thema was sein Interesse weckt, zu vertiefen. Bei der Konstruktion meines Wissensmodells geht es also konkret um die Förderung von internem technologischem Wissen, wie dieses generiert, gefördert und im Unternehmen publiziert werden kann. Dabei stützt sich mein Modell auf bestehende Abläufe der Unternehmung Solve und reichert diese mit einer zentralen Erweiterung im Schritt \textit{Ablegen von Wissen} an. Um das Modell in seiner Gesamtheit zu verstehen, ist es an dieser Stelle notwendig auf die Begriffe \textit{Kreise} sowie \textit{Innovationsgruppe} im Kontext der Firma Solve einzugehen. Die Mitarbeiter der Firma Solve werden aufgrund ihrer technischen Fertigkeiten in unterschiedliche Kreise unterteilt. So gibt es zum Beispiel einen Kreis welcher auf die Technologie \textit{IoT} (Internet of Things) oder \textit{WPF} (Windows Presentation Foundation) spezialisiert ist. Nebst den Kreisen gibt es ebenfalls das Konstrukt der \textit{Innovationsgruppe}. Die Innovationsgruppe setzt sich aus Mitarbeitenden der unterschiedlichen Kreise zusammen und ist daher interdisziplinär aufgebaut. Nachfolgend wird auf die wichtigsten Merkmale des Wissensmodels anhand der 4 definierten Phasen eingegangen.
+\\
+
+Das Modell beginnt mit der Phase \textit{Wissensgenerierung}. In dieser Phase lernt der Mitarbeiter im Rahmen von Projekten neue Technologien kennen. Die Wissensgenerierung geschieht hierbei also durch die tägliche Arbeit. In der zweiten Phase \textit{Entstehung einer Idee} geht es um die Entwicklung einer Idee. Möchte ein Mitarbeiter also eine Technologie vertieft anschauen oder hat einen konkreten Anwendungsfall welche die Innovation des Unternehmens erhöht, so kann er diese Technologie zusammen mit einem Vorschlag an die Innovationsgruppe herantragen. Der Prozess hierbei ist sehr unbürokratisch gehalten, es müssen keine Formulare etc. ausgefüllt werden. Die Innovationsgruppe prüft den Vorschlag und räumt bei Bedarf auch entsprechend Ressourcen und Zeit ein. Wurde von der Innovationsgruppe der Vorschlag anerkannt, so kann der Mitarbeiter seine Idee im Schritt «Wissen dem Unternehmen zur Verfügung stellen» in Form eines Projektes weiterverfolgen. Hierzu wird zuerst eine Nachforschung zur Technologie betrieben (Aufbereitung von Wissen). Anschliessend erfolgt die eigentliche Umsetzung der Idee (Anwendung von Wissen). Danach wird das gesammelte Wissen in Form einer Präsentation und falls notwendig weiteren Artefakten wie Quellcode etc. zusammengefasst (Zusammenfassung von Wissen). Zum Schluss werden die Artefakte in Form einer monatliche stattfindenden Entwicklersitzung dem Unternehmen präsentiert (Vorstellen vom Wissen) und im SharePoint mit entsprechend hinterlegten Metainformationen wie Thema etc. abgelegt (Ablegen vom Wissen). Genau bei diesem letzten Schritt sehe ich ein Problem, das Wissen wird gesammelt und in einer Wissensdatenbank (SharePoint) hinterlegt, jedoch wird es nicht mehr aktiv kommuniziert. Ich würde mit Hilfe von SharePoint Automatisierungsmechanismen folgenden Erweiterung in den Ablageprozess des Wissens einbauen. Beim Ablegen des Wissens wird dieses mit zusätzlichen Metainformationen im SharePoint hinterlegt (Kategorie, Thema, Zielgruppe). Ich würde eine Automatisierungsregel im SharePoint hinterlegen, welche aufgrund der Metainformationen wie Thema etc. die abgelegten Wissensbeiträge pro Monat sammelt und diese in Form eines Newsletters automatisch an die interessierten Gruppen versendet. Die Firma Solve bietet bereits die Möglichkeit an, diverse von Hand geschriebene Newsletter zu abonnieren, warum also nicht auch automatisch erstelle \textit{Wissens-Newsletter} aufgrund von Automatisierungsregeln, welche mit SharePoint leicht umzusetzen sind? So können die Mitarbeiter jederzeit mitverfolgen, welches neues Wissen in welchen Kategorien von Monat zu Monat hinzugekommen ist. Dies stellt eine bessere \textit{Awareness} gegenüber dem fortlaufend steigenden Wissen innerhalb der gesamten Unternehmung sicher und sorgt des Weiteren dafür, dass die Solve-Rakete mit ihrem Wissenstreibstoff in höhere Innovations-Sphären aufsteigen kann. 
+
+\section{Selbstreflexion}
+Zu Beginn des Moduls Wissensmanagement war ich zuerst skeptisch gegenüber dem eigentlichen Nutzen. Jedoch habe ich durch die Entwicklung meines eigenen Wissensmodels festgestellt, dass Wissensmanagement ein sehr zentraler und wichtiger Aspekt eines Unternehmens darstellt. Am Anfang wusste ich was für einzelne Schritte die Firma Solve durchführt, um Wissen zu generieren, zu festigen und zu verteilen. Jedoch bin ich mir erst durch die Erstellung eines Models im Klaren geworden, wie wichtig die einzelnen Strukturen und Schritte wirklich sind. Bei der Erstellung des Models musste ich besonders darauf Achten, mich nicht im Detail zu verlieren, sondern den Blick auf das grosse Ganze beizubehalten. Auch war es schwierig die gesamten Konstrukte möglichst einfach und verständlich abzubilden, sodass eine schnelle Interpretation möglich ist. Ausserdem hat mir das Konstruieren eines Models enorm dabei geholfen, Schwachstellen bzw. Verbesserungspotenzial in Bezug auf das Wissensmanagement der Firma Solve zu erkennen. So konnte ich die gesamte Wissenskette der Firma Solve abbilden und habe festgestellt, dass beim letzten Schritt (Ablegen von Wissen) enormes Potenzial mit Hilfe von SharePoint Automatisierung in Kombination mit der Erstellung von Wissens-Newslettern besteht. Abschliessend kann ich sagen, dass ich viele neue Erkenntnisse gewonnen habe und die Thematik Wissensmanagement von einem ganz neuen und positiven Blickwinkel betrachte.
+
+\end{document}
